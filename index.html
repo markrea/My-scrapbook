@@ -26,19 +26,43 @@
 <h5>h5 heading with a text paragraph</h5>
 
 <h1>Do you have a pet?</h1>
+<form action="example URL">
 <div class="yes-no">
     <label for="yes">Yes</label>
-    <input id="yes" value="yes" type="radio" name="yes">
+    <input id="yes" value="yes" type="radio" name="yes-no">
 </div>
 <div class="yes-no">
     <label for="no">No</label>
-    <input id="no" value="no" type="radio" name="no">
+    <input id="no" value="no" type="radio" name="yes-no">
 </div>
 <p>If yes what is your pets name?</p>
 
-<form action="example URL">
     <input type="text" placeholder="Your Pet">
 </form>
 <button type="submit">Submit your pet</button>
+
+<form action="example URL" method="post">
+    <ul>
+        <li>
+        <label for="name">Name:   </label>
+        <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+        <label for="mail">E-mail:   </label>
+        <input type="email" id="mail" name="user_mail">
+        </li>
+        <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message">Enter your message here</textarea>
+        </li>
+    </ul>
+   
+    <li class="button">
+        <button type="submit">Send your message</button>
+    </li> 
+
+    
+
+</form>
 </body>
 </html>
